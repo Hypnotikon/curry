@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Dominik" />
+    <meta name="description" content="snake game" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" async></script>
+  </head>
+
+  <body id="body">
+    <h1 id="title">Curry in Hurry [DEMO] [OPEN BETA]</h1>
+    <h2 id="story"></h2>
+    <div id="container">
+      <p>Use arrows to start the game</p>
+      <p>Hitting edges will anulate your score</p>
+      <canvas id="board"></canvas>
+      <div>Score <span id="score">0</span></div>
+      <div id="img">
+        <img src="img/item.png" alt="item" id="item" />
+        <img src="img/main.png" alt="main" id="main" />
+      </div>
+      <details>
+        <summary>
+          history of
+          <span style="display: inline" id="historyNumber">5</span> last games
+        </summary>
+        <table id="scoreTable">
+          <p id="remove">You need to play a game to have some score</p>
+        </table>
+      </details>
+
+      <div id="settings">
+        <h1>Settings</h1>
+        <table>
+          <tr>
+            <td><label for="color">Background Color</label></td>
+            <td><input type="color" id="color" /></td>
+            <td><button onclick="colorChange()">Change</button></td>
+          </tr>
+          <tr>
+            <td><label for="color2">Color of gameboard</label></td>
+            <td><input type="color" id="color2" /></td>
+            <td><button onclick="color2Change()">Change</button></td>
+          </tr>
+          <tr>
+            <td><label for="history">Games in history</label></td>
+            <td><input type="number" id="history" min="0" max="10" /></td>
+            <td><button onclick="historyy()">Change</button></td>
+          </tr>
+        </table>
+        <button onclick="reset()">RESET ALL TO DEFAULT</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background-color: bisque;
+  margin-top: 0;
+}
+
+div {
+  font-size: 30px;
+}
+
+span {
+  display: block;
+  font-size: 30px;
+}
+
+#img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  visibility: visible;
+}
+
+h2 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ol {
+  list-style-type: disc;
+}
+
+#container {
+  opacity: 0;
+}
+
+#score,
+#maincontainer {
+  animation: opacita 5s;
+  animation-fill-mode: forwards;
+}
+
+/* li {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+} */
+
+@keyframes opacita {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+details {
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+}
+
+#settings {
+  position: absolute;
+  right: 30px;
+  top: 250px;
+}
+
+p:nth-child(2) {
+  margin-top: 0;
+}
+
+p:nth-child(1) {
+  margin-bottom: 0;
+}
